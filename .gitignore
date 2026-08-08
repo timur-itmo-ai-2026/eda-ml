@@ -220,3 +220,4 @@ __marimo__/
 # Task datasets and generated artifacts
 /data/*
 !/data/.gitkeep
+/cache/
