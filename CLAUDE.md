@@ -184,3 +184,6 @@ Only when the user explicitly says the assignment is finishing: review all manda
 C questions; run the appropriate checks; ensure the notebook is reproducible; check README only for necessary final
 synchronization; review `AI_USAGE.md`; inspect `git diff` and `git status`; flag anything incomplete or unverified.
 Do not commit or push unless explicitly asked.
+
+# IMPORTANT!
+The cumulative solution.ipynb must remain reproducible by restarting the kernel and executing all cells from top to bottom.
