@@ -4,8 +4,8 @@ Instructions for Claude Code in this repository.
 
 ## Project context
 
-- Repository for the ITMO "Artificial Intelligence" master's admission task **"EDA and Machine Learning"**.
-  Total time limit: **2 hours**.
+- Repository for the ITMO "Artificial Intelligence" master's admission task **"EDA and Machine Learning"**. Total time
+  limit: **2 hours**.
 - Python 3.13, `uv` as package/environment manager, src layout with the `eda_ml` package.
 - `TASK.md` holds the task legend and the submission rules. It is context only — **never modify it**.
 - Documentation for the committee (`README.md`, `AI_USAGE.md`) is in Russian.
@@ -43,7 +43,7 @@ followed by the exact wording, then `A2`, `B1`, `C2`, and so on.
 - The question in the user's current message is the **authoritative task for the current work unit**.
 - Solve **only that question**. Do not invent missing questions and do not answer questions the user has not sent.
 - Read the wording literally and identify: what exactly must be calculated or explained; filtering conditions; required
-  units, rounding and output format; which dataset(s) to use. Answer-format and filtering conditions ("only non-empty",
+  units, rounding and output format; which dataset (s) to use. Answer-format and filtering conditions ("only non-empty",
   "in range from … to …") must be reproduced literally — most lost points come from inattentive filtering, not bad code.
 - If the wording is genuinely ambiguous **and** the ambiguity can change the answer, say so briefly before choosing an
   interpretation. Otherwise proceed immediately without unnecessary discussion.
@@ -66,13 +66,13 @@ For **every** question, append in this order:
 
 <exact original wording supplied by the user>
 
-[code cell(s)]
+[code cell (s)]
 
 [output / visualization]
 
 **Ответ:** ...
 
-**Вывод:** ...   # only when a conclusion is actually useful
+**Вывод:** ... # only when a conclusion is actually useful
 ```
 
 Keep identifiers easy to locate for a human reviewer and for automated evaluation. Never put Claude prompts,
@@ -137,9 +137,9 @@ Official guidance: A ≈ 15 min, B ≈ 45 min, the remaining time split between 
 - **do not work on P unless the user explicitly asks.**
 
 Avoid overengineering. No abstraction layers, config frameworks, CLIs, or CI pipelines. Put code in `src/eda_ml/` only
-when it materially helps solve the actual questions faster or more reliably; otherwise keep it in the notebook.
-Do not add dependencies unless useful for the actual task. Do not make destructive or irreversible changes without a
-clear reason. **Do not commit or push unless explicitly asked.**
+when it materially helps solve the actual questions faster or more reliably; otherwise keep it in the notebook. Do not
+add dependencies unless useful for the actual task. Do not make destructive or irreversible changes without a clear
+reason. **Do not commit or push unless explicitly asked.**
 
 ## AI_USAGE.md
 
@@ -175,15 +175,17 @@ Before telling the user a question is complete:
 5. update `AI_USAGE.md`;
 6. do not commit or push.
 
-Then report concisely: the answer; where it is in the notebook; what was verified; any remaining uncertainty.
-**Then stop and wait for the next exam question.**
+Then report concisely: the answer; where it is in the notebook; what was verified; any remaining uncertainty. **Then
+stop and wait for the next exam question.**
 
 ## Final exam checkpoint
 
 Only when the user explicitly says the assignment is finishing: review all mandatory A and B questions and the requested
 C questions; run the appropriate checks; ensure the notebook is reproducible; check README only for necessary final
-synchronization; review `AI_USAGE.md`; inspect `git diff` and `git status`; flag anything incomplete or unverified.
-Do not commit or push unless explicitly asked.
+synchronization; review `AI_USAGE.md`; inspect `git diff` and `git status`; flag anything incomplete or unverified. Do
+not commit or push unless explicitly asked.
 
 # IMPORTANT!
-The cumulative solution.ipynb must remain reproducible by restarting the kernel and executing all cells from top to bottom.
+
+The cumulative solution.ipynb must remain reproducible by restarting the kernel and executing all cells from top to
+bottom.
