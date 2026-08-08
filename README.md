@@ -17,6 +17,22 @@ Talent Hub).
 - Основные библиотеки: pandas, numpy, pyarrow, scikit-learn, scipy, matplotlib, seaborn
 - Dev-зависимости: jupyter, ipykernel, pytest, ruff
 
+## Данные
+
+Перед запуском скачайте файлы из папки на Google Drive:
+https://drive.google.com/drive/folders/1eAHBQkYfY2jLumC-9hQaNbd0Ir2vY1hC
+
+Распакуйте архивы и поместите файлы в папку `data/` в корне репозитория так, чтобы получилось:
+
+```
+data/
+├── complaints_train.csv
+├── complaints_test.csv
+└── sample_submission.csv
+```
+
+Папка `data/` не хранится в git (см. `.gitignore`).
+
 ## Воспроизведение
 
 ```powershell
